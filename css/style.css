@@ -51,6 +51,7 @@
 
 #demo-app {
   padding-top: 30px;
+  padding-bottom: 40px;
 }
 #demo-app .card {
   padding: 15px;
@@ -60,6 +61,22 @@
   height: 200px;
 }
 
+/* SECTION STRATEGIC PLANNING */
+
+#planning {
+  background-color: var(--primary-color);
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+#planning .card {
+  padding: 15px;
+  background-color: violet;
+
+  /* debug */
+  height: 600px;
+}
+
 /* ### MEDIA QUERY ### */
 
 /* TABLET MODE */
@@ -67,6 +84,8 @@
   .container {
     max-width: 768px;
   }
+
+  /* section demo app */
   #demo-app .row {
     display: flex;
     flex-wrap: wrap;
@@ -86,6 +105,7 @@
     max-width: 1080px;
   }
 
+  /* section demo app */
   #demo-app .card:first-child {
     display: flex;
   }
@@ -96,5 +116,16 @@
 
   .card-img {
     width: 50%;
+  }
+
+  /* section strategic planning */
+  #planning .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  #planning .col {
+    width: 40%;
   }
 }
