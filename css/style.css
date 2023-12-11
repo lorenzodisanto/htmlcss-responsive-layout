@@ -136,6 +136,26 @@
   background-color: rgb(233, 161, 233);
 }
 
+/* SECTION ABOUT US */
+#about-us {
+  padding-top: 30px;
+  padding-bottom: 40px;
+}
+
+#about-us .card-content {
+  padding: 15px;
+
+  height: 600px;
+  background-color: var(--primary-color);
+}
+
+#about-us .card-image {
+  padding: 15px;
+
+  height: 400px;
+  background-color: var(--primary-color);
+}
+
 /* ### MEDIA QUERY ### */
 
 /* TABLET MODE */
@@ -170,6 +190,19 @@
 
   #benefits .col {
     width: calc(100% / 2);
+  }
+
+  /* section about us */
+  #about-us .row {
+    display: flex;
+  }
+
+  #about-us .col:first-child {
+    width: 60%;
+  }
+
+  #about-us .col {
+    width: 40%;
   }
 }
 
@@ -206,5 +239,15 @@
   /* section benefits */
   #benefits .col {
     width: calc(100% / 3);
+  }
+
+  /* section about us */
+
+  #about-us .col:first-child {
+    width: 70%;
+  }
+
+  #about-us .col {
+    width: 30%;
   }
 }
