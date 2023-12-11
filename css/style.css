@@ -121,6 +121,21 @@
   height: 150px;
 }
 
+/* SECTION BENEFITS */
+
+#benefits {
+  background-color: var(--primary-color);
+  padding-top: 30px;
+  padding-bottom: 40px;
+}
+
+#benefits .card {
+  padding: 15px;
+
+  height: 350px;
+  background-color: rgb(233, 161, 233);
+}
+
 /* ### MEDIA QUERY ### */
 
 /* TABLET MODE */
@@ -145,6 +160,16 @@
   /* section testimonials */
   #testimonials .card {
     flex-direction: row;
+  }
+
+  /* section benefits */
+  #benefits .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  #benefits .col {
+    width: calc(100% / 2);
   }
 }
 
@@ -176,5 +201,10 @@
 
   #planning .col {
     width: 40%;
+  }
+
+  /* section benefits */
+  #benefits .col {
+    width: calc(100% / 3);
   }
 }
