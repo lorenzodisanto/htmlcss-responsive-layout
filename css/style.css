@@ -156,6 +156,25 @@
   background-color: var(--primary-color);
 }
 
+/* BANNER CONTENT */
+
+#banner {
+  background-color: var(--primary-color);
+  padding-top: 30px;
+  padding-bottom: 40px;
+  height: 400px;
+}
+
+/* FOOTER */
+
+#footer {
+  background-color: #333333;
+  color: white;
+  padding-top: 30px;
+  padding-bottom: 40px;
+  height: 200px;
+}
+
 /* ### MEDIA QUERY ### */
 
 /* TABLET MODE */
