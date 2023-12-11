@@ -1,0 +1,100 @@
+:root {
+  --primary-color: #9792e4;
+  --secondary-color: #0084fd;
+  --card-bg-color: #b5ddff;
+  --card-color: #5a6e7f;
+}
+
+/* RESET */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* UTILS */
+
+.container {
+  max-width: 576px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.row {
+  margin: 0 -15px;
+}
+
+.col {
+  padding: 15px;
+}
+
+/* HEADER */
+
+#header {
+  background-color: var(--secondary-color);
+  color: white;
+}
+
+#header > .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+#header > .container > .logo,
+#header > .container > nav {
+  padding: 25px;
+  background-color: var(--card-bg-color);
+}
+
+/* SECTION DEMO APP */
+
+#demo-app {
+  padding-top: 30px;
+}
+#demo-app .card {
+  padding: 15px;
+  background-color: var(--card-bg-color);
+
+  /* debug */
+  height: 200px;
+}
+
+/* ### MEDIA QUERY ### */
+
+/* TABLET MODE */
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+  #demo-app .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  #demo-app .col:first-child {
+    width: calc(100% / 3 * 2);
+  }
+  #demo-app .col {
+    width: calc(100% / 3);
+  }
+}
+
+/* DESKTOP MODE */
+@media screen and (min-width: 1080px) {
+  .container {
+    max-width: 1080px;
+  }
+
+  #demo-app .card:first-child {
+    display: flex;
+  }
+
+  .card-app {
+    width: 50%;
+  }
+
+  .card-img {
+    width: 50%;
+  }
+}
