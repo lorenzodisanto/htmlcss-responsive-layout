@@ -101,7 +101,7 @@ nav span {
   text-align: start;
 }
 
-.card p {
+#demo-app .card p {
   padding-bottom: 30px;
   padding-top: 30px;
   color: var(--card-color);
@@ -143,10 +143,48 @@ nav span {
 
 #planning .card {
   padding: 15px;
-  background-color: violet;
 
-  /* debug */
+  /* debug 
   height: 600px;
+  background-color: violet;*/
+}
+
+#planning .card p {
+  padding-bottom: 30px;
+  padding-top: 30px;
+  color: white;
+}
+
+#planning h2 {
+  color: white;
+  padding: 30px 0;
+  padding-top: 50px;
+  font-size: 2rem;
+}
+
+.card.develop {
+  background-color: white;
+  border-radius: 45px;
+  margin: 15px;
+  text-align: center;
+}
+
+#planning .card.develop h3 {
+  color: black;
+}
+
+#planning .card.develop p {
+  color: black;
+}
+
+.arrow {
+  display: inline-block;
+  background-color: var(--primary-color);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  font-size: 1rem;
+  padding: 10px;
 }
 
 /* SECTION TESTIMONIALS */
@@ -157,13 +195,20 @@ nav span {
 }
 
 .test-intro {
-  background-color: rgb(233, 161, 233);
-  height: 150px;
+  /* background-color: rgb(233, 161, 233); */
+  /* height: 150px; */
   padding: 15px;
+  color: black;
+  text-align: center;
+}
+.test-intro h2 {
+  color: var(--primary-color);
+  font-size: 2rem;
+  padding: 20px;
 }
 
-#testimonials .row .col:first-child {
-  padding-top: 0;
+.test-intro p {
+  font-size: 1.25rem;
 }
 
 #testimonials .card {
@@ -171,26 +216,45 @@ nav span {
   flex-direction: column;
   align-items: center;
   gap: 35px;
-  padding: 15px;
+  padding: 25px 15px;
   background-color: var(--primary-color);
+  border-radius: 35px;
+  text-align: center;
+  font-size: 1.2rem;
 }
 
 .test-img {
-  padding: 15px;
-
-  /* debug */
-  background-color: rgb(233, 161, 233);
+  border-radius: 50%;
+  height: 200px;
   width: 200px;
-  height: 150px;
+  line-height: 200px;
+  overflow: hidden;
+  background-color: rgb(233, 161, 233);
+  /* debug 
+  
+  width: 200px;
+  height: 150px;*/
+}
+
+.test-img > img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  vertical-align: middle;
 }
 
 .test-content {
   padding: 15px;
+  color: white;
 
-  /* debug */
+  /* debug 
   background-color: rgb(233, 161, 233);
   width: 100%;
-  height: 150px;
+  height: 150px;*/
+}
+
+.test-content p {
+  padding-bottom: 20px;
 }
 
 /* SECTION BENEFITS */
@@ -199,13 +263,42 @@ nav span {
   background-color: var(--primary-color);
   padding-top: 30px;
   padding-bottom: 40px;
+  text-align: center;
+}
+
+#benefits h3 {
+  color: white;
+  font-size: 2rem;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 #benefits .card {
-  padding: 15px;
+  padding: 25px;
+  text-align: start;
+  border-radius: 25px;
+  background-color: white;
+}
 
-  height: 350px;
-  background-color: rgb(233, 161, 233);
+#benefits h2 {
+  color: var(--primary-color);
+  font-size: 3rem;
+  padding: 20px 0;
+}
+
+#benefits h4 {
+  color: var(--primary-color);
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+#benefits p {
+  color: var(--card-color);
+  margin-bottom: 20px;
+}
+
+#benefits .btn.bold {
+  background-color: var(--primary-color);
 }
 
 /* SECTION ABOUT US */
@@ -277,6 +370,20 @@ nav span {
     flex-direction: row;
   }
 
+  #testimonials .layer {
+    width: 30%;
+  }
+
+  #testimonials .test-content {
+    width: 70%;
+    text-align: start;
+  }
+
+  #testimonials .test-intro h2 {
+    font-size: 2.5rem;
+    padding: 25px;
+  }
+
   /* section benefits */
   #benefits .row {
     display: flex;
@@ -338,10 +445,30 @@ nav span {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: flex-end;
   }
 
   #planning .col {
     width: 40%;
+  }
+
+  #planning .card.develop img {
+    width: 70%;
+    display: inline-block;
+  }
+
+  /* section testimonials */
+  #testimonials .layer {
+    width: 20%;
+  }
+
+  #testimonials .test-content {
+    width: 80%;
+  }
+
+  #testimonials .test-intro h2 {
+    font-size: 3rem;
+    padding: 30px;
   }
 
   /* section benefits */
