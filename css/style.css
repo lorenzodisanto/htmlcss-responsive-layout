@@ -310,15 +310,48 @@ nav span {
 #about-us .card-content {
   padding: 15px;
 
-  height: 600px;
-  background-color: var(--primary-color);
+  /* background-color: var(--primary-color); */
+}
+
+#about-us h2 {
+  color: var(--primary-color);
+  font-size: 2.5rem;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+#about-us p {
+  padding-top: 20px;
 }
 
 #about-us .card-image {
   padding: 15px;
+  color: var(--primary-color);
 
-  height: 400px;
+  /* background-color: var(--primary-color); */
+}
+
+.card-image h3 {
+  font-size: 1.9rem;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.card-image .btn.bold {
   background-color: var(--primary-color);
+  font-size: 0.8rem;
+}
+
+.card-image .layer {
+  position: relative;
+  display: inline-block;
+}
+
+.layer span {
+  position: absolute;
+  font-size: 8rem;
+  top: 35px;
+  right: 0;
 }
 
 /* BANNER CONTENT */
@@ -327,7 +360,29 @@ nav span {
   background-color: var(--primary-color);
   padding-top: 30px;
   padding-bottom: 40px;
-  height: 400px;
+  color: white;
+  text-align: center;
+}
+#banner h3 {
+  font-size: 1.7rem;
+  padding-top: 20px;
+}
+
+#banner h2 {
+  color: #fdc15f;
+  padding: 40px 0;
+  font-size: 3rem;
+}
+
+#banner p {
+  padding: 20px 0;
+}
+
+#banner .btn {
+  color: var(--primary-color);
+  font-weight: bold;
+  padding: 20px 70px;
+  border-radius: 35px;
 }
 
 /* FOOTER */
@@ -337,7 +392,7 @@ nav span {
   color: white;
   padding-top: 30px;
   padding-bottom: 40px;
-  height: 200px;
+  text-align: center;
 }
 
 /* ### MEDIA QUERY ### */
@@ -405,6 +460,10 @@ nav span {
 
   #about-us .col {
     width: 40%;
+  }
+
+  #banner .container {
+    max-width: 600px;
   }
 }
 
